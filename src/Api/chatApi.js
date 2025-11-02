@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5115";
+// const BASE_URL = "http://localhost:5115";
+  const BASE_URL = "https://toycylce-backend-1.onrender.com"
+
 
 // 1. Get all chat room messages between two users
 export const getMessages = async (user1, user2, token) => {

@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const url = "http://localhost:5115";
+// const url = "http://localhost:5115";
+  const url = "https://toycylce-backend-1.onrender.com"
 
 export const addToCart = async (toyId, quantity, token) => {
     return await axios.post(`${url}/cart/add`, { toyId, quantity }, {
