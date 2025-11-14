@@ -67,7 +67,9 @@ const ProductCard = ({ product }) => {
   return (
     <div className="bg-white rounded-xl shadow-md p-4 relative">
       <img
-        src={`http://localhost:5115${product.imageUrl}`}
+        // src={`http://localhost:5115${product.imageUrl}`}
+        src={`https://toycylce-backend-1.onrender.com${product.imageUrl}`}
+
         alt={product.title}
         className="w-full h-52 object-cover rounded-md"
       />
