@@ -97,7 +97,9 @@ const ProductDetails = () => {
           {/* Image */}
           <div className="md:w-1/2">
             <img
-              src={`http://localhost:5115${toy.imageUrl}`}
+              // src={`http://localhost:5115${toy.imageUrl}`}
+              src={`https://toycylce-backend-1.onrender.com${toy.imageUrl}`}
+
               alt={toy.title}
               className="rounded-xl object-cover w-full h-[400px] sm:h-[500px]"
             />
