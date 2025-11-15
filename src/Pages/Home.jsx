@@ -30,33 +30,37 @@ function Home() {
 
   return (
     <>
-      {/* NAVBAR */}
-      <div className="bg-white shadow-lg sticky top-0 z-10">
-        <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
-          <h1 className="text-amber-950 font-bold text-3xl">ToyCycle</h1>
-          <ul className="flex gap-6 text-amber-950  text-base font-semibold">
-            <li><a href="#top" className="hover:text-yellow-600">Home</a></li>
-            <li><a href="#features" className="hover:text-yellow-600">Features</a></li>
-            <li><a href="#categories" className="hover:text-yellow-600">Categories</a></li>
-            <li><a href="#new" className="hover:text-yellow-600">New Arrivals</a></li>
-             <li><a href="#about" className="hover:text-amber-950">About</a></li>
-              <li><a href="#test" className="hover:text-amber-950">Testimonials</a></li>
-               <li><a href="#contact" className="hover:text-amber-950">Contact </a></li>
-          </ul>
-          <div className="flex gap-3">
-            {userRole === "user" && <ProfileBtn />}
-            {!userRole && (
-              <button
-                className="bg-amber-950 hover:bg-amber-900 text-white px-4 py-2 rounded font-semibold"
-                onClick={() => navigate("/SignUp")}
-              >
-                Log In
-              </button>
-            )}
-            <CartBtn />
-          </div>
-        </div>
-      </div>
+<div className="bg-white shadow-lg sticky top-0 z-10">
+  <div className="max-w-7xl mx-auto flex justify-between items-center px-6 h-16">
+
+    <img src="/Toycycle.png" alt="logo" className="w-28 md:w-36 h-auto" />
+
+    <ul className="flex gap-6 text-amber-950 text-base font-semibold">
+      <li><a href="#top" className="hover:text-yellow-600">Home</a></li>
+      <li><a href="#features" className="hover:text-yellow-600">Features</a></li>
+      <li><a href="#categories" className="hover:text-yellow-600">Categories</a></li>
+      <li><a href="#new" className="hover:text-yellow-600">New Arrivals</a></li>
+      <li><a href="#about" className="hover:text-yellow-600">About</a></li>
+      <li><a href="#test" className="hover:text-yellow-600">Testimonials</a></li>
+      <li><a href="#contact" className="hover:text-yellow-600">Contact</a></li>
+    </ul>
+
+    <div className="flex gap-3">
+      {userRole === "user" && <ProfileBtn />}
+      {!userRole && (
+        <button
+          className="bg-amber-950 hover:bg-amber-900 text-white px-4 py-2 rounded font-semibold"
+          onClick={() => navigate("/SignUp")}
+        >
+          Log In
+        </button>
+      )}
+      <CartBtn />
+    </div>
+
+  </div>
+</div>
+
 
       {/* HERO SECTION */}
       <div id="top" className="w-full h-[580px] relative">
