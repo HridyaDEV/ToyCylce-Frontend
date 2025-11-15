@@ -68,7 +68,9 @@ function Login() {
 
         {/* Left Content */}
         <div className="flex-1 flex items-center justify-center">
-          <h1 className="text-4xl font-bold text-amber-950">ToyCycle</h1>
+          {/* <h1 className="text-4xl font-bold text-amber-950">ToyCycle</h1> */}
+                    <img src="/Toycycle.png" alt="toycycle" className='w-64' />
+
         </div>
 
         {/* Vertical line */}
