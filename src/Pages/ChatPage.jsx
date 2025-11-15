@@ -8,7 +8,7 @@ import {
   getOtherUserInfo,
 } from "../Api/chatApi"; // ⬅️ API imports
 
-const socket = io("http://localhost:5115");
+const socket = io("https://toycylce-backend-1.onrender.com");
 
 const ChatPage = () => {
   const { roomId } = useParams();

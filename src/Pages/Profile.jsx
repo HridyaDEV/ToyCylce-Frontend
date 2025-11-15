@@ -217,7 +217,7 @@ const Profile = () => {
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
                                     {myToys.map((toy) => (
                                         <div key={toy._id} className="bg-white rounded-xl shadow hover:shadow-md border border-orange-200">
-                                            <img src={`http://localhost:5115${toy.imageUrl}`} alt={toy.title} className="w-full h-44 object-cover rounded-t-xl" />
+                                            <img src={`https://toycylce-backend-1.onrender.com${toy.imageUrl}`} alt={toy.title} className="w-full h-44 object-cover rounded-t-xl" />
                                             <div className="p-4">
                                                 <h4 className="text-lg font-semibold text-amber-900">{toy.title}</h4>
                                                 <p className="text-sm text-gray-600">{toy.toyCategory}</p>

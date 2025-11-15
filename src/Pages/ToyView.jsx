@@ -41,7 +41,7 @@ const ToyView = () => {
 
           {toy.imageUrl && (
             <img
-              src={`http://localhost:5115/${toy.image}`}
+              src={`https://toycylce-backend-1.onrender.com/${toy.image}`}
               alt={toy.title}
               className="w-full h-64 object-cover mb-6 rounded-lg"
             />
